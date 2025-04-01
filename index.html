@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>카카오페이 송금</title>
 
-  <!-- ✅ ✅ Open Graph 태그: 카카오톡에서 송금처럼 보이도록 -->
-  <meta property="og:title" content="카카오페이 송금">
-  <meta property="og:description" content="최기붕님에게 1원을 보냈습니다.">
-  <meta property="og:image" content="https://t1.kakaocdn.net/kakaopay/kakaopay_logo.png">
-  <meta property="og:url" content="https://yourdomain.github.io/your-page/"> <!-- 배포한 주소로 바꿔줘 -->
-  <meta property="og:type" content="website">
+  <!-- ✅ Open Graph: 카카오톡 공유 미리보기용 -->
+  <meta property="og:title" content="카카오페이 송금" />
+  <meta property="og:description" content="최기붕님에게 1원을 보냈습니다." />
+  <meta property="og:image" content="https://t1.kakaocdn.net/kakaopay/kakaopay_logo.png" />
+  <meta property="og:url" content="https://yourusername.github.io/fake-kakaopay/" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Twitter (선택) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="카카오페이 송금" />
+  <meta name="twitter:description" content="최기붕님에게 1원을 보냈습니다." />
+  <meta name="twitter:image" content="https://t1.kakaocdn.net/kakaopay/kakaopay_logo.png" />
+
   <style>
     body {
+      background-color: #ffeb00;
+      font-family: 'Apple SD Gothic Neo', sans-serif;
       text-align: center;
-      font-family: sans-serif;
-      margin-top: 50px;
-      background-color: #fffbe6;
+      padding-top: 100px;
+      margin: 0;
     }
-
+    .box {
+      background-color: #fff;
+      display: inline-block;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .logo {
+      width: 120px;
+      margin-bottom: 30px;
+    }
     .title {
-      font-size: 100px;
+      font-size: 28px;
       font-weight: bold;
-      animation: pop-in 1.5s ease-out forwards;
+      margin-bottom: 10px;
+      color: #000;
     }
-
-    .custom-image {
-      margin-top: 30px;
-      width: 500px;
-      border-radius: 10px;
-      animation: fade-in 2s ease-in-out;
+    .desc {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 20px;
     }
-
-    .noha {
-      font-size: 50px;
-      animation: blink 1.2s infinite;
-      color: tomato;
+    .btn {
+      display: inline-block;
+      background-color: #fee500;
+      color: #000;
       font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      transition: 0.2s;
     }
-
-    /* 애니메이션 정의는 반드시 클래스 밖에! */
-    @keyframes pop-in {
-      0% {
-        transform: scale(0.6);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    @keyframes fade-in {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+    .btn:hover {
+      background-color: #ffd800;
     }
   </style>
 </head>
 <body>
 
-  <div class="title">반갑다 강원 게이야! 우흥!</div>
+  <div class="box">
+    <img class="logo" src="https://t1.kakaocdn.net/kakaopay/kakaopay_logo.png" alt="카카오페이 로고" />
+    <div class="title">송금이 완료되었습니다</div>
+    <div class="desc">최기붕님에게 <strong>₩1</strong>을 송금했습니다.</div>
 
-  <img class="custom-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSahQV-Zacy4vVu6jON5PNrrxbuT4r5k2rD1g&s" alt="고양이 이미지">
-
-  <p class="noha">노하~</p>
+    <!-- ✅ 버튼 누르면 네가 만든 페이지로 이동 -->
+    <a href="https://yourusername.github.io/your-original-site/" class="btn">송금하기</a>
+  </div>
 
 </body>
 </html>
